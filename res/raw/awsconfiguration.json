@@ -1,0 +1,71 @@
+{
+    "UserAgent": "aws-amplify-cli/0.1.0",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://ttwnrxidbbhphhyc3wbhu7357u.appsync-api.eu-north-1.amazonaws.com/graphql",
+            "Region": "eu-north-1",
+            "AuthMode": "API_KEY",
+            "ApiKey": "da2-uraes4n3gndpvdohrkxvuafzvq",
+            "ClientDatabasePrefix": "myday_API_KEY"
+        },
+        "myday_AWS_IAM": {
+            "ApiUrl": "https://ttwnrxidbbhphhyc3wbhu7357u.appsync-api.eu-north-1.amazonaws.com/graphql",
+            "Region": "eu-north-1",
+            "AuthMode": "AWS_IAM",
+            "ClientDatabasePrefix": "myday_AWS_IAM"
+        }
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "eu-north-1:d4e1a056-0cf6-4405-8a2b-c5c16f05d0ed",
+                "Region": "eu-north-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "eu-north-1_o9aVD4dng",
+            "AppClientId": "5g4uv0k70ll6mp0vs69185u4ds",
+            "Region": "eu-north-1"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "mfaConfiguration": "OFF",
+            "mfaTypes": [
+                "SMS"
+            ],
+            "passwordProtectionSettings": {
+                "passwordPolicyMinLength": 8,
+                "passwordPolicyCharacters": [
+                    "REQUIRES_LOWERCASE",
+                    "REQUIRES_NUMBERS",
+                    "REQUIRES_SYMBOLS",
+                    "REQUIRES_UPPERCASE"
+                ]
+            },
+            "signupAttributes": [
+                "EMAIL"
+            ],
+            "socialProviders": [],
+            "usernameAttributes": [
+                "EMAIL"
+            ],
+            "verificationMechanisms": [
+                "EMAIL"
+            ]
+        }
+    },
+    "S3TransferUtility": {
+        "Default": {
+            "Bucket": "myday-storage-625e9cae105918-dev",
+            "Region": "eu-north-1"
+        }
+    }
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/taskNameFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="no"
+        android:hint="@string/nameHint"
+        android:inputType="text"
+        android:paddingHorizontal="18dp"
+        android:textColorHint="#919090"
+        android:textSize="34sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/descriptionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="no"
+        android:gravity="top"
+        android:hint="@string/descriptionHeading"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="18dp"
+        android:paddingTop="10dp"
+        android:textColorHint="#858585"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/chipLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="18dp">
+
+        <!-- First Chip -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/timeChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:layout_marginEnd="10dp"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <!-- Second Chip -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/priorityChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priorityChip"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/timeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:visibility="gone">
+    </TimePicker>
+
+    <Spinner
+        android:id="@+id/priorityFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/priority"
+        android:minHeight="48dp"
+        android:paddingHorizontal="18dp"
+        android:visibility="gone"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editButtonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/edit_task"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"/>
+    <item
+        android:title="@string/home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:title="@string/shared_tasks"
+        android:id="@+id/sharedTasks"
+        android:icon="@drawable/ic_group"/>
+    <item
+        android:title="@string/notes"
+        android:id="@+id/notes"
+        android:icon="@drawable/ic_notes"/>
+</menu>
+
+
+
