@@ -1,0 +1,142 @@
+# this is an auto generated file. This will be overwritten
+
+subscription OnCreateNotes($filter: ModelSubscriptionNotesFilterInput) {
+  onCreateNotes(filter: $filter) {
+    id
+    content
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateNotes($filter: ModelSubscriptionNotesFilterInput) {
+  onUpdateNotes(filter: $filter) {
+    id
+    content
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteNotes($filter: ModelSubscriptionNotesFilterInput) {
+  onDeleteNotes(filter: $filter) {
+    id
+    content
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnCreateUser($filter: ModelSubscriptionUserFilterInput) {
+  onCreateUser(filter: $filter) {
+    id
+    email
+    Tasks {
+      nextToken
+      __typename
+    }
+    Notes {
+      id
+      content
+      createdAt
+      updatedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    userNotesId
+    __typename
+  }
+}
+
+subscription OnUpdateUser($filter: ModelSubscriptionUserFilterInput) {
+  onUpdateUser(filter: $filter) {
+    id
+    email
+    Tasks {
+      nextToken
+      __typename
+    }
+    Notes {
+      id
+      content
+      createdAt
+      updatedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    userNotesId
+    __typename
+  }
+}
+
+subscription OnDeleteUser($filter: ModelSubscriptionUserFilterInput) {
+  onDeleteUser(filter: $filter) {
+    id
+    email
+    Tasks {
+      nextToken
+      __typename
+    }
+    Notes {
+      id
+      content
+      createdAt
+      updatedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    userNotesId
+    __typename
+  }
+}
+
+subscription OnCreateTask($filter: ModelSubscriptionTaskFilterInput) {
+  onCreateTask(filter: $filter) {
+    id
+    name
+    description
+    time
+    priority
+    userID
+    completed
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateTask($filter: ModelSubscriptionTaskFilterInput) {
+  onUpdateTask(filter: $filter) {
+    id
+    name
+    description
+    time
+    priority
+    userID
+    completed
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteTask($filter: ModelSubscriptionTaskFilterInput) {
+  onDeleteTask(filter: $filter) {
+    id
+    name
+    description
+    time
+    priority
+    userID
+    completed
+    createdAt
+    updatedAt
+    __typename
+  }
+}

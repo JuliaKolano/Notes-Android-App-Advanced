@@ -1,0 +1,169 @@
+# this is an auto generated file. This will be overwritten
+
+mutation CreateNotes(
+  $input: CreateNotesInput!
+  $condition: ModelNotesConditionInput
+) {
+  createNotes(input: $input, condition: $condition) {
+    id
+    content
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation UpdateNotes(
+  $input: UpdateNotesInput!
+  $condition: ModelNotesConditionInput
+) {
+  updateNotes(input: $input, condition: $condition) {
+    id
+    content
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation DeleteNotes(
+  $input: DeleteNotesInput!
+  $condition: ModelNotesConditionInput
+) {
+  deleteNotes(input: $input, condition: $condition) {
+    id
+    content
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    email
+    Tasks {
+      nextToken
+      __typename
+    }
+    Notes {
+      id
+      content
+      createdAt
+      updatedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    userNotesId
+    __typename
+  }
+}
+
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    email
+    Tasks {
+      nextToken
+      __typename
+    }
+    Notes {
+      id
+      content
+      createdAt
+      updatedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    userNotesId
+    __typename
+  }
+}
+
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    email
+    Tasks {
+      nextToken
+      __typename
+    }
+    Notes {
+      id
+      content
+      createdAt
+      updatedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    userNotesId
+    __typename
+  }
+}
+
+mutation CreateTask(
+  $input: CreateTaskInput!
+  $condition: ModelTaskConditionInput
+) {
+  createTask(input: $input, condition: $condition) {
+    id
+    name
+    description
+    time
+    priority
+    userID
+    completed
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation UpdateTask(
+  $input: UpdateTaskInput!
+  $condition: ModelTaskConditionInput
+) {
+  updateTask(input: $input, condition: $condition) {
+    id
+    name
+    description
+    time
+    priority
+    userID
+    completed
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation DeleteTask(
+  $input: DeleteTaskInput!
+  $condition: ModelTaskConditionInput
+) {
+  deleteTask(input: $input, condition: $condition) {
+    id
+    name
+    description
+    time
+    priority
+    userID
+    completed
+    createdAt
+    updatedAt
+    __typename
+  }
+}
